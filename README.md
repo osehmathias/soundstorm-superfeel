@@ -27,14 +27,14 @@ They basically applied <a href="https://arxiv.org/abs/2202.04200">MaskGiT</a> to
 ## Install
 
 ```bash
-$ pip install soundstorm-pytorch
+$ pip install soundstorm-superfeel
 ```
 
 ## Usage
 
 ```python
 import torch
-from soundstorm_pytorch import SoundStorm, ConformerWrapper
+from soundstorm_superfeel import SoundStorm, ConformerWrapper
 
 conformer = ConformerWrapper(
     codebook_size = 1024,
@@ -69,7 +69,7 @@ To directly train on raw audio, you need to pass in your pretrained `SoundStream
 
 ```python
 import torch
-from soundstorm_pytorch import SoundStorm, ConformerWrapper, Conformer, SoundStream
+from soundstorm_superfeel import SoundStorm, ConformerWrapper, Conformer, SoundStream
 
 conformer = ConformerWrapper(
     codebook_size = 1024,
